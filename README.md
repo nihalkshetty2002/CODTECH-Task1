@@ -11,6 +11,9 @@
 
 # Overview of the project
 
+![Screenshot 2024-06-21 110752](https://github.com/nihalkshetty2002/CODTECH-Task1/assets/142249656/d7c7cc4d-c487-4050-a9ed-723464abde94)
+
+
 **Objective:**
 
 This application aims to be a user-friendly tool that helps users:
