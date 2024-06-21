@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(5, 24, 43), #482448, #df0b0b);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 70px;
+}
+
+.frame {
+    padding: 40px;
+    background: rgb(219, 162, 162);
+    margin: 100px auto 10px;
+    border-radius: 5vh;
+    padding: 40px 30px 20px;
+    box-shadow: #00000082 10px 10px 20px 20px;
+}
+
+.frame h3 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: gainsboro;
+    border-radius: 60vh;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.input {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 20px;
+}
+
+.row .btn {
+    border: none;
+    outline: none;
+    border-radius: 5vh;
+    padding: 15px;
+}
+
+.row .btn:hover {
+    background-color: #e10f0f;
+    transform: scale(0.9, 0.9);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+ul li {
+    list-style: none;
+    padding: 12px 40px 10px 40px;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Adding custom checkbox style to each list item */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 1px;
+}
+
+/* Styling for checked list items */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+    left: 5px;
+}
+
+/* Changing the checkbox style for checked items */
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+/* Styling the delete button (span) within each list item */
+ul li span {
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height:25px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #474747;
+    border-radius: 50%;
+
+}
+
+ul li span:hover {
+    background: #dbd3d3;
+}
